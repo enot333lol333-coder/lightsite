@@ -208,29 +208,24 @@ body {
         padding: 16px 20px;
     }
 
-    .nav-list {
-        gap: 16px;
-    }
-
-    .hero {
-        flex-direction: column;
-        padding: 40px 20px;
-        text-align: center;
-    }
-
-    .hero-image {
+    .nav {
+        order: 3;
         width: 100%;
     }
 
-    .hero-content {
-        max-width: 100%;
+    .nav-list {
+        gap: 16px;
+        flex-wrap: wrap;
     }
 
-    .services {
-        padding: 40px 20px;
+    .cta-button {
+        margin-left: auto;
     }
 
-    .services-list {
-        flex-direction: column;
-    }
+    .nav-list {
+    gap: 16px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
 }
