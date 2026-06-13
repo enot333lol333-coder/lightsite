@@ -199,3 +199,38 @@ body {
     color: #555;
     font-size: 14px;
 }
+
+@media (max-width: 768px) {
+    .header {
+        flex-wrap: wrap;
+        gap: 12px;
+        height: auto;
+        padding: 16px 20px;
+    }
+
+    .nav-list {
+        gap: 16px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .services {
+        padding: 40px 20px;
+    }
+
+    .services-list {
+        flex-direction: column;
+    }
+}
