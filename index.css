@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     color: #1e1e2e;
@@ -36,7 +40,7 @@ body {
 .nav-list {
     display: flex;
     gap: 24px;
-    list-style: none;   
+    list-style: none;
 }
 
 .nav-list a {
@@ -57,10 +61,6 @@ body {
     border-radius: 8px;
     font-size: 15px;
     font-weight: 500;
-}
-
-.cta-button:hover {
-    background-color: #5a52d4;
 }
 
 .hero {
@@ -87,14 +87,7 @@ body {
 }
 
 .hero-image {
-    width: 400px;
-    height: auto;
-}
-
-.hero-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
+    width: 500px;
 }
 
 .hero-button {
@@ -105,10 +98,6 @@ body {
     border-radius: 8px;
     font-size: 16px;
     font-weight: 500;
-}
-
-.hero-button:hover {
-    background-color: #5a52d4;
 }
 
 .services {
@@ -150,6 +139,7 @@ body {
     height: 28px;
     stroke: #6c63ff;
 }
+
 .service-title {
     font-size: 18px;
     font-weight: 600;
@@ -162,7 +152,6 @@ body {
     line-height: 1.5;
 }
 
-/* Плавна анімація для всього */
 .service-item,
 .hero-button,
 .cta-button,
@@ -170,13 +159,11 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Hover на картках */
 .service-item:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 24px rgba(108, 99, 255, 0.1);
 }
 
-/* Hover на кнопках */
 .hero-button:hover {
     background-color: #5a52d4;
     transform: translateY(-2px);
@@ -187,7 +174,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* Hover на nav */
 .nav-list a:hover {
     color: #6c63ff;
 }
@@ -216,16 +202,33 @@ body {
     .nav-list {
         gap: 16px;
         flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
     }
 
     .cta-button {
         margin-left: auto;
     }
 
-    .nav-list {
-    gap: 16px;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
-}
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .services {
+        padding: 40px 20px;
+    }
+
+    .services-list {
+        flex-direction: column;
+    }
 }
